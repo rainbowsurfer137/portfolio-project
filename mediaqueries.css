@@ -1,0 +1,56 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+
+}
+
+@media screen and (max-width: 375px){
+
+
+    #profile, #about {
+        padding: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    .pic-container {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .pic-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    #projects, #contact {
+        margin: 0;
+        
+    }
+
+    #projects, #contact h2 {
+        margin: 1rem;
+        
+    }
+
+    .about__text-container {
+        margin: 0;
+    }
+
+    .contact__form-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+}

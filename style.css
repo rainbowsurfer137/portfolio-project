@@ -1,0 +1,378 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    background-color: #F2EAE2;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transition */
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: #6C7289;
+    text-decoration: none;
+    text-decoration-color: #fff;
+}
+
+a:hover {
+    color: #6C7289;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #6C7289;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color:#6C7289;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* Hamburger Menu */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #6C7289;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #F2EAE2;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #6C7289;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* Typography */
+
+h1 {
+    font-family: "Playfair", serif;
+    font-size: 4rem;
+    color: #1C232B;
+}
+
+.subheading {
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    color: #6C7289;
+}
+
+h2 {
+    font-family: "Playfair", serif;
+    font-size: 3rem;
+    color: #1C232B;
+}
+
+h3 {
+    font-family: "Playfair", serif;
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    color: #1C232B;
+}
+
+
+/* Button */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: .125rem;
+    padding: 1em 3.5em;
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+}
+
+.btn-color-1 {
+    border: none;
+    color: #fff;
+    background-color: #3D8168;
+}
+
+.btn-color-1:hover {
+    background-color: #1A4032;
+    border: none;
+    cursor: pointer;
+}
+
+/* Arrows */
+
+.down-arrow-container {
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+}
+
+#profile .down-arrow-container {
+    padding-bottom: 4rem;
+}
+
+/* Hero Section */
+
+#profile, #about {
+    display: flex;
+    justify-content: center;
+    min-height: 85vh;
+    gap: 3rem;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+#profile {
+    align-items: center;
+}
+
+.profile__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+/* About Section */
+
+.about__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    margin: 0 3rem;
+}
+
+/* Project Section */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    margin: 0 8rem;
+    gap: 3rem;
+}
+
+.projects__card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+    border: 1px solid #1C232B
+
+}
+
+.project-card__left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    max-height: 100%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.right-arrow-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.project-card__img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Contact Section */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    margin: 0 8rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact__form-container {
+    width: 50%;
+    margin: auto;
+    padding: 57px 99px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    color:#6C7289;
+    font-size: 0.75rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #6C7289
+}
+
+.contact-form .btn-container {
+    justify-content: flex-start;
+}
+
+/* Social Links */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.social-icons__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Erica Smibert
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Erica Smibert
+        </div>
+            
+        <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile__text-container">
+            <h1 class="title-profile">Erica Smibert</h1>
+            <p class="subheading">Based in Portland Oregon</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'">
+                    CONTACT</button>
+            </div>
+        </div>
+        <div class="pic-container">
+            <img src="/assets/images/profile-img.png" alt="Erica Smibert">
+        </div>
+        <div class="down-arrow-container">
+            <img src="/assets/images/down-arrow.png" 
+            alt="down arrow" 
+            class="icon down-arrow"
+            data-target="about">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about__text-container">
+            <h2 class="title-about">About Me</h2>
+            <p class="sectoin__text__p">Lorem ipsum dolor sit amet consectetur. Sed aliquet posuere eu convallis. Habitant facilisis nunc vestibulum elit consequat amet id arcu eu. Mi sed urna nec scelerisque sed. Suscipit fermentum curabitur at eleifend. Varius etiam aliquet dictum praesent in vitae et mi. Nibh vitae in sollicitudin dolor. Nulla tempor proin arcu sit malesuada suspendisse eget ac sapien. Faucibus fringilla ipsum arcu blandit amet. Massa eu facilisis pharetra enim quis. Euismod faucibus in tellus a tincidunt amet quam in.
+            <br>
+            <br>
+            Suscipit fermentum curabitur at eleifend. Varius etiam aliquet dictum praesent in vitae et mi. Nibh vitae in sollicitudin dolor. Nulla tempor proin arcu sit malesuada suspendisse eget ac sapien. Faucibus fringilla ipsum arcu blandit amet. Massa eu facilisis pharetra enim quis. Euismod faucibus in tellus a tincidunt amet quam in.
+            <br>
+            <br>
+            Erat morbi sed hendrerit pellentesque venenatis eget feugiat diam. Vivamus sit lacus purus phasellus gravida aliquam habitasse mi. Sem malesuada mattis tincidunt tellus. Viverra viverra odio viverra neque sagittis velit id duis. Malesuada orci velit adipiscing massa id cum. Mattis accumsan hac morbi nec interdum. Pretium rutrum viverra neque faucibus volutpat aenean.
+            </p>
+            <div class="down-arrow-container">
+                <img src="/assets/images/down-arrow.png" 
+                alt="down arrow" 
+                class="icon down-arrow"
+                data-target="projects">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="title-projcets">Projects</h2>
+        <div class="projects__card-container">
+            <div class="project-card">
+                <div class="project-card__left-container">
+                    <div class="project-card__text-container">
+                        <p class="subheading">project type</p>
+                        <h3>Project One</h3>
+                        
+                    </div>
+                    <div class="right-arrow-container">
+                        <a href="#">
+                        <img src="/assets/images/right-arrow.png" 
+                        alt="right arrow" 
+                        class="icon right-arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card__img-container">
+                    <img src="/assets/images/project-1.png" alt="Project 1">
+                </div>
+                
+            </div>
+            <div class="project-card">
+                <div class="project-card__left-container">
+                    <div class="project-card__text-container">
+                        <p class="subheading">project type</p>
+                        <h3>Project Two</h3>
+                        
+                    </div>
+                    <div class="right-arrow-container">
+                        <a href="#">
+                        <img src="/assets/images/right-arrow.png" 
+                        alt="right arrow" 
+                        class="icon right-arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card__img-container">
+                    <img src="/assets/images/project-2.png" alt="Project 2" alt="Project 1">
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <div class="down-arrow-container">
+            <img src="/assets/images/down-arrow.png" 
+            alt="down arrow" 
+            class="icon down-arrow"
+            data-target="projects">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="title-contact">Contact</h2>
+        <div class="contact__form-container">
+            <form action="" method="POST" class="contact-form">
+                <label>NAME</label>
+                <input type="text" id="name" required>
+
+                <lable for="email">EMAIL</lable>
+                <input type="email" id="email" required>
+
+                <lable for="message">MESSAGE</lable>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="4" 
+                    required></textarea>
+
+                <div class="btn-container">
+                    <button
+                        type="submit"
+                        class="btn btn-color-1" 
+                        onclick="location.href='./#contact'">
+                        SEND
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="social-links">
+            <div class="social-icons__container">
+                <img src="./assets/images/facebook.png" 
+                alt="My facebook profile"
+                class="icon"
+                id="facebook">
+            </div>
+            <div class="social-icons__container">
+                <img src="./assets/images/insta.png" 
+                alt="My instagram profile"
+                class="icon"
+                id="instagram">
+            </div>
+            <div class="social-icons__container">
+                <img src="./assets/images/github.png" 
+                alt="My github profile"
+                class="icon"
+                id="github">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
